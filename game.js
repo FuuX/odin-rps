@@ -6,6 +6,11 @@ function getComputerChoice() {
 
 
 function playRound(playerSelection, computerSelection) {
+    if((playerSelection === "rock" && computerSelection === "scissors") || (playerSelection === "paper" && computerSelection === "rock") || (playerSelection === "scissors" && computerSelection === "paper"))
+        console.log("You won!" + " " + playerSelection + " beats " + computerSelection);
+    else {
+        console.log("Lost!");
+    }
   }
    
   const playerSelection = "rock";
